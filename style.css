@@ -267,7 +267,25 @@ p.compiled-time {
 }
 /* HOVER EFFECTS */ 
 
-@media(min-width:992px){
+/*MEDIA QUERIES */
+
+@media (min-width:850px){
+
+    .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr repeat(3,.75fr);
+        grid-template-areas: "item1 item1"
+                             "item2 item3"
+                             "item4 item5"
+                             "item6 item7";
+             }
+    /*.items-child{
+         padding-top:30px;
+         font-size:20px;
+    }*/
+}
+
+@media(min-width:1122px){
 
     .container {
         width:70%;

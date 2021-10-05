@@ -1,5 +1,6 @@
-function func(){
-  let u = document.querySelectorAll('.timeframe')
-   let d = document.querySelector('.child2a')
-   d.insertBefore(u[0],u[1])
+function func(e){
+  e.target.classList.add('bg-color-timeframes');
 } 
+let compiled_time = document.querySelectorAll('p.compiled-time');
+let timeframe = Array.from(document.querySelectorAll('.timeframe'));
+timeframe.map(item => item.addEventListener('click',func));
