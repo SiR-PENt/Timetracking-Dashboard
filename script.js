@@ -1,6 +1,11 @@
-function func(e){
-  e.target.classList.add('bg-color-timeframes');
+
+ function func(e){
+  for(let i=0; i<timeframe.length; i++){ 
+    timeframe[i].className='timeframe bg-color-p'; 
+  }
+  e.target.className="timeframe bg-color-p-timeframe"
 } 
+ 
 let compiled_time = document.querySelectorAll('p.compiled-time');
 let timeframe = Array.from(document.querySelectorAll('.timeframe'));
 timeframe.map(item => item.addEventListener('click',func));
